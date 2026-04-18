@@ -1,0 +1,6 @@
+[gd_resource type="Resource" script_class="ConditionSettings" load_steps=2 format=4]
+
+[ext_resource type="Script" path="res://WeaponsAndEquipmentConditions/ConditionSettings.gd" id="1"]
+
+[resource]
+script = ExtResource("1")

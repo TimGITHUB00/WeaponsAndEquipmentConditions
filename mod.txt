@@ -1,0 +1,8 @@
+[mod]
+name="Weapons and Equipment Conditions"
+id="weapons-and-equipment-conditions"
+version="0.1.0"
+
+[autoload]
+CTE="res://WeaponsAndEquipmentConditions/Main.gd"
+CTEConfig="res://WeaponsAndEquipmentConditions/Config.gd"
