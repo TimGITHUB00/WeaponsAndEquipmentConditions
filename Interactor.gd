@@ -11,6 +11,9 @@ func _physics_process(_delta):
 	if not conditionSettings.conditionEnabled:
 		return
 
+	if conditionSettings.shelterOnlyEnabled and not gameData.shelter:
+		return
+
 	if not gameData.interaction:
 		return
 

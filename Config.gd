@@ -10,10 +10,16 @@ const MOD_ID = "WeaponsAndEquipmentConditions"
 
 func _ready() -> void:
 	config.set_value("Bool", "conditionEnabled", {
-		"name" = "Show Weapons and Equipment Conditions - Enabled",
+		"name" = "Show Weapons and Equipment Conditions",
 		"tooltip" = "",
 		"default" = true,
 		"value" = true
+	})
+	config.set_value("Bool", "shelterOnlyEnabled", {
+		"name" = "Show Conditions Only In Shelters",
+		"tooltip" = "Only show ground item conditions while inside shelters.",
+		"default" = false,
+		"value" = false
 	})
 
 
@@ -42,5 +48,6 @@ func _on_waec_config_updated(_config: ConfigFile):
 	print("Weapons and Equipment Conditions config updated")
 
 	conditionSettings.conditionEnabled = _config.get_value("Bool", "conditionEnabled")["value"]
+	conditionSettings.shelterOnlyEnabled = _config.get_value("Bool", "shelterOnlyEnabled")["value"]
 	
 	conditionSettings.mcmEnabled = true

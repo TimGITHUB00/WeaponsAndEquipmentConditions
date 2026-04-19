@@ -5,7 +5,8 @@ Adds weapons and equipment condition into tooltips to Road to Vostok.
 ## Features
 
 - Tooltips modified to show weapons and equipment conditions when hovering over them on the ground.
-- Customize which mod features are enabled via the Mod Configuration Menu (You can switch on/off: weapons and equipment condition).
+- Optional shelter-only mode for condition tooltips.
+- Customize which mod features are enabled via the Mod Configuration Menu.
 
 ## Compatibility
 
@@ -17,6 +18,7 @@ Adds weapons and equipment condition into tooltips to Road to Vostok.
 With MCM installed, find "Weapons and Equipment Conditions" in the mod config menu:
 
 - Show weapons and equipment conditions - on/off (default: on)
+- Show conditions only in shelters - on/off (default: off)
 
 Without MCM, settings are saved automatically with defaults.
 

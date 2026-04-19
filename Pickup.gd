@@ -1,6 +1,7 @@
 extends "res://Scripts/Pickup.gd"
 
 var conditionSettings = preload("res://WeaponsAndEquipmentConditions/ConditionSettings.tres")
+var gameData = preload("res://Resources/GameData.tres")
 
 func UpdateTooltip():
 	if slotData.itemData == null:
@@ -24,6 +25,9 @@ func UpdateTooltip():
 
 func _build_condition_text() -> String:
 	if not conditionSettings.conditionEnabled:
+		return ""
+
+	if conditionSettings.shelterOnlyEnabled and not gameData.shelter:
 		return ""
 
 	if not _should_show_condition():
